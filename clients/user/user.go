@@ -3,13 +3,14 @@ package clients
 import (
 	"context"
 	"fmt"
-	"github.com/google/uuid"
 	"net/http"
 	"order-service/clients/config"
 	"order-service/common/util"
 	config2 "order-service/config"
 	"order-service/constants"
 	"time"
+
+	"github.com/google/uuid"
 )
 
 type UserClient struct {

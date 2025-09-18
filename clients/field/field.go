@@ -4,7 +4,6 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/google/uuid"
 	"net/http"
 	"order-service/clients/config"
 	"order-service/common/util"
@@ -12,6 +11,8 @@ import (
 	"order-service/constants"
 	"order-service/domain/dto"
 	"time"
+
+	"github.com/google/uuid"
 )
 
 type FieldClient struct {
