@@ -49,7 +49,7 @@ func (c *ConsumerGroup) ConsumeClaim(session sarama.ConsumerGroupSession, claim 
 				break
 			}
 
-			logrus.Errorf("error handling message pn %s, attempt %d: %v", message.Topic, attempt, err)
+			logrus.Errorf("error handling message on %s, attempt %d: %v", message.Topic, attempt, err)
 			if attempt == maxRetry {
 				logrus.Errorf("max retry reached, message will be ignored")
 			}
