@@ -1,5 +1,5 @@
 # do 
-FROM golang:1.24-alpine as builder
+FROM golang:1.25-alpine as builder
 
 RUN apk update
 RUN apk add git openssh tzdata build-base python3 net-tools
