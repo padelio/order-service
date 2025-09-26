@@ -89,7 +89,6 @@ pipeline {
         }
       }
     }
-    
 
     stage('Update docker-compose.yaml') {
       steps {
