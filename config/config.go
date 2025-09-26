@@ -1,10 +1,11 @@
 package config
 
 import (
-	"github.com/sirupsen/logrus"
-	_ "github.com/spf13/viper/remote"
 	"order-service/common/util"
 	"os"
+
+	"github.com/sirupsen/logrus"
+	_ "github.com/spf13/viper/remote"
 )
 
 var Config AppConfig
@@ -39,6 +40,7 @@ type Database struct {
 	Name                  string `json:"name"`
 	Username              string `json:"username"`
 	Password              string `json:"password"`
+	SSLMode               string `json:"sslmode"`
 	MaxOpenConnections    int    `json:"maxOpenConnections"`
 	MaxLifeTimeConnection int    `json:"maxLifeTimeConnection"`
 	MaxIdleConnections    int    `json:"maxIdleConnections"`
