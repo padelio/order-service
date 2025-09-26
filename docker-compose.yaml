@@ -3,7 +3,7 @@ services:
   order-service:
     container_name: order-service
     platform: linux/amd64
-    image: masadamsahid/padelio-order-service:6
+    image: masadamsahid/padelio-order-service:8
     # build:
     #   context: .
     #   dockerfile: Dockerfile
