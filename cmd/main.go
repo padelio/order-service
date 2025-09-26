@@ -122,6 +122,8 @@ func serveKafkaConsumer(service services.IServiceRegistry) {
 		sarama.NewBalanceStrategyRoundRobin(),
 	}
 
+	logrus.Printf("KAFKA CONFIG:\n%+v", config.Config.Kafka)
+
 	brokers := config.Config.Kafka.Brokers
 	groupID := config.Config.Kafka.GroupID
 	topics := config.Config.Kafka.Topics
